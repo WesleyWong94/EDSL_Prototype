@@ -18,12 +18,15 @@
         <Rectangle Fill="#FF47F9EF" HorizontalAlignment="Left" Margin="165,0,-0.4,0" Stroke="Black" Width="629" Height="84" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
         <Rectangle Fill="#FF4CFDF4" HorizontalAlignment="Left" Height="420" Stroke="Black" VerticalAlignment="Top" Width="165" Grid.RowSpan="2"/>
         <Button Content="Season" HorizontalAlignment="Left" Margin="31,27,0,0" VerticalAlignment="Top" Width="105" RenderTransformOrigin="0.625,-1.722" Height="37" Background="#FFFDF843" FontWeight="Bold" FontStyle="Italic" Click="Button_Click_Season"/>
-        <Button Content="Results" HorizontalAlignment="Left" Margin="31,98,0,0" VerticalAlignment="Top" Width="105" Height="40" Background="#FFFDF732" FontWeight="Bold" FontStyle="Italic" Click="Button_Click_Results"/>
-        <Button Content="Ladder" HorizontalAlignment="Left" Margin="31,163,0,0" VerticalAlignment="Top" Width="105" Height="35" Background="#FFFFFA4B" FontWeight="Bold" FontStyle="Italic" Click="Button_Click_Ladder"/>
-        <Button Content="Create Draw" HorizontalAlignment="Left" Margin="31,233,0,0" VerticalAlignment="Top" Width="105" Height="40" Background="#FFFCF63B" FontWeight="Bold" FontStyle="Italic" Click="Button_Click_Create_Draw"/>
+        <Button Content="Results" HorizontalAlignment="Left" Margin="31,69,0,0" VerticalAlignment="Top" Width="105" Height="40" Background="#FFFDF732" FontWeight="Bold" FontStyle="Italic" Click="Button_Click_Results"/>
+        <Button Content="Reports" HorizontalAlignment="Left" Margin="31,114,0,0" VerticalAlignment="Top" Width="105" Height="35" Background="#FFFFFA4B" FontWeight="Bold" FontStyle="Italic" Click="Button_Click_Reports"/>
+        <Button Content="Players" HorizontalAlignment="Left" Margin="31,423.8,0,-327" VerticalAlignment="Top" Width="105" Height="40" Background="#FFFCF63B" FontWeight="Bold" FontStyle="Italic" Click="Button_Click_Create_Draw" Grid.Row="1"/>
         <Label Content="Eastern District Soccer League" HorizontalAlignment="Left" Margin="287,27,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="52" Width="361" FontWeight="Bold" FontStyle="Italic" FontSize="24"/>
 
         <Frame x:Name="Main" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="620" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2" Margin="170,89,0,-20" Grid.RowSpan="2"/>
-        <Button Content="View Draw" HorizontalAlignment="Left" Margin="31,283,0,0" VerticalAlignment="Top" Width="105" FontWeight="Bold" Height="27" Grid.RowSpan="2" Background="#FFF0FC5D" FontStyle="Italic" Click="Button_Click_View_Draw"/>
+        <Button Content="Clubs" HorizontalAlignment="Left" Margin="31,182,0,0" VerticalAlignment="Top" Width="105" Height="35" Background="#FFFFFA4B" FontWeight="Bold" FontStyle="Italic"/>
+        <Button Content="Teams" HorizontalAlignment="Left" Margin="31,222,0,0" VerticalAlignment="Top" Width="105" Height="35" Background="#FFFFFA4B" FontWeight="Bold" FontStyle="Italic"/>
+        <Button Content="Players" HorizontalAlignment="Left" Margin="31,262,0,0" VerticalAlignment="Top" Width="105" Height="35" Background="#FFFFFA4B" FontWeight="Bold" FontStyle="Italic" Grid.RowSpan="2"/>
+        
     </Grid>
 </Window>

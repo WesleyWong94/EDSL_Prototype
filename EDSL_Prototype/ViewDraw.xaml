@@ -8,17 +8,28 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ViewDraw" Background="White">
 
+
     <Grid>
+
         <Frame x:Name="Main" HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="780" NavigationUIVisibility="Hidden" Margin="10,0,0,-0.4" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
-        <TextBlock HorizontalAlignment="Left" Margin="250,0,0,0" TextWrapping="Wrap" Text="Draw" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" FontStyle="Italic" Height="54"/>
-        <TextBlock HorizontalAlignment="Left" Margin="58,56,0,0" TextWrapping="Wrap" Text="Division:" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
-        <ComboBox HorizontalAlignment="Left" Margin="163,63,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Content="View Draw" HorizontalAlignment="Left" Margin="324,67,0,0" VerticalAlignment="Top" Width="159" FontSize="24" FontWeight="Bold" Height="42" Background="#FF54F6ED"/>
-        <TextBlock HorizontalAlignment="Left" Margin="58,98,0,0" TextWrapping="Wrap" Text="Draw Details:" VerticalAlignment="Top" FontWeight="Bold" FontSize="18" RenderTransformOrigin="0.521,-0.284"/>
-        <Button Content="Exit" HorizontalAlignment="Left" Margin="106,302,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Background="#FF54F7FA"/>
-        <Button Content="Edit" HorizontalAlignment="Left" Margin="266,302,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Background="#FF50F7EE"/>
-        <Button Content="Delete" HorizontalAlignment="Left" Margin="427,302,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" Background="#FF52F4EC"/>
-        <Image HorizontalAlignment="Left" Height="158" Margin="182,125,0,0" VerticalAlignment="Top" Width="310"/>
-        <Image Margin="170,114,60,51.6" Source="DrawExample.jpg" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Margin="250,0,0,0" TextWrapping="Wrap" Text="Reports" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" FontStyle="Italic" Height="54"/>
+        <TextBlock HorizontalAlignment="Left" Margin="46,104,0,0" TextWrapping="Wrap" Text="Division:" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
+        <ComboBox IsEditable="True" IsReadOnly="True" Text="DivisionNo" HorizontalAlignment="Left" Margin="151,112,0,0" VerticalAlignment="Top" Width="84">
+            <ComboBoxItem Content="Division 1"></ComboBoxItem>
+            <ComboBoxItem Content="Division 2"></ComboBoxItem>
+            <ComboBoxItem Content="Division 3"></ComboBoxItem>
+        </ComboBox>
+        <Button Content="View Draw" HorizontalAlignment="Left" Margin="55,167,0,0" VerticalAlignment="Top" Width="159" FontSize="24" FontWeight="Bold" Height="42" Background="#FF54F6ED" Click="Button_Click_View_Draw"/>
+        <TextBlock HorizontalAlignment="Left" Margin="46,62,0,0" TextWrapping="Wrap" Text="Season:" VerticalAlignment="Top" FontWeight="Bold" FontSize="22" RenderTransformOrigin="0.521,-0.284"/>
+        <Button Content="View Ladder" HorizontalAlignment="Left" Margin="327,167,0,0" VerticalAlignment="Top" Width="159" FontSize="24" FontWeight="Bold" Height="42" Background="#FF54F6ED" Click="Button_Click_View_Ladder"/>
+        <WebBrowser x:Name="pdfWebViewer" HorizontalAlignment="Left" Height="234" Margin="820,27,-411,0" VerticalAlignment="Top" Width="391"/>
+        <ComboBox IsEditable="True" IsReadOnly="True" Text="SeasonNo" HorizontalAlignment="Left" Margin="151,68,0,0" VerticalAlignment="Top" Width="84" Height="23">
+            <ComboBoxItem Content="Season 1"></ComboBoxItem>
+            <ComboBoxItem Content="Season 2"></ComboBoxItem>
+            <ComboBoxItem Content="Season 3"></ComboBoxItem>
+        </ComboBox>
+
+
     </Grid>
+
 </Page>

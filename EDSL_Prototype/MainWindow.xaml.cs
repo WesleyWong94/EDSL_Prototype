@@ -49,6 +49,9 @@ namespace EDSL_Prototype
             Main.Content = new ViewDraw();
         }
 
-
+        private void Button_Click_Reports(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new ViewDraw();
+        }
     }
 }

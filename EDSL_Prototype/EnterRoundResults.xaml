@@ -10,16 +10,27 @@
 
     <Grid>
         <Frame x:Name="Main" HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="780" NavigationUIVisibility="Hidden" Margin="10,0,0,-0.4" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
-        <TextBlock HorizontalAlignment="Left" Margin="258,10,0,0" TextWrapping="Wrap" Text="Results" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="48"/>
-        <TextBox HorizontalAlignment="Left" Height="112" Margin="175,172,0,0" TextWrapping="Wrap" Text="RoundResults" VerticalAlignment="Top" Width="379"/>
-        <TextBlock HorizontalAlignment="Left" Margin="87,94,0,0" TextWrapping="Wrap" Text="Division:" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <TextBlock HorizontalAlignment="Left" Margin="32,120,0,0" TextWrapping="Wrap" Text="Round Number:" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <TextBlock HorizontalAlignment="Left" Margin="42,164,0,0" TextWrapping="Wrap" Text="Round Details:" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <Button Content="Update Results" HorizontalAlignment="Left" Margin="372,94,0,0" VerticalAlignment="Top" Width="136" FontWeight="Bold" FontSize="18" Height="39" Background="#FF4AFCF9"/>
-        <ComboBox HorizontalAlignment="Left" Margin="191,94,0,0" VerticalAlignment="Top" Width="120" Height="20"/>
-        <ComboBox HorizontalAlignment="Left" Margin="191,120,0,0" VerticalAlignment="Top" Width="120" Height="21"/>
-        <Button Content="Edit Results" HorizontalAlignment="Left" Margin="78,296,0,0" VerticalAlignment="Top" Width="75" Background="#FF72FCF0" FontWeight="Bold"/>
-        <Button Content="Save" HorizontalAlignment="Left" Margin="271,296,0,0" VerticalAlignment="Top" Width="75" Background="#FF5EFDEF" FontWeight="Bold"/>
-        <Button Content="Calculate Ladder" HorizontalAlignment="Left" Margin="448,296,0,0" VerticalAlignment="Top" Width="106" RenderTransformOrigin="0.867,-0.193" Background="#FF54F9EA" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="256,-2,0,0" TextWrapping="Wrap" Text="Results" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="36"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,62,0,0" TextWrapping="Wrap" Text="Round No:" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Width="84"/>
+        <TextBlock HorizontalAlignment="Left" Margin="192,62,0,0" TextWrapping="Wrap" Text="Game Results:" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Button Content="Update Results" HorizontalAlignment="Left" Margin="0,123,0,0" VerticalAlignment="Top" Width="127" FontWeight="Bold" FontSize="15" Height="23" Background="#FF4AFCF9" RenderTransformOrigin="0.221,0.681" Click="Button_Click_1"/>
+        <ComboBox IsEditable="True" IsReadOnly="True" Text="SeasonNo" HorizontalAlignment="Left" Margin="99,35,0,0" VerticalAlignment="Top" Width="77" Height="20" RenderTransformOrigin="-0.046,0.44" >
+            <ComboBoxItem Content="Season 1"></ComboBoxItem>
+            <ComboBoxItem Content="Season 2"></ComboBoxItem>
+            <ComboBoxItem Content="Season 3"></ComboBoxItem>
+        </ComboBox>
+
+        <Button Content="Edit Results" HorizontalAlignment="Left" Margin="0,151,0,0" VerticalAlignment="Top" Width="127" Background="#FF72FCF0" FontWeight="Bold" FontSize="15" Height="23"/>
+        <Button Content="Save Results" HorizontalAlignment="Left" Margin="0,179,0,0" VerticalAlignment="Top" Width="127" Background="#FF5EFDEF" FontWeight="Bold" RenderTransformOrigin="-0.613,0.542" FontSize="15" Click="Button_Click_Save_Results"/>
+        <Button Content="Calculate Ladder" HorizontalAlignment="Left" Margin="0,263,0,0" VerticalAlignment="Top" Width="127" RenderTransformOrigin="0.867,-0.193" Background="#FF54F9EA" FontWeight="Bold" FontSize="15" Click="Button_Click_Ladder"/>
+        <Button x:Name="btnCreateLadder" Content="Create Ladder" HorizontalAlignment="Left" Margin="0,207,0,0" VerticalAlignment="Top" Width="127" RenderTransformOrigin="0.867,-0.193" Background="#FF54F9EA" FontWeight="Bold" Height="23" FontSize="15" Click="btnCreateLadder_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,33,0,0" TextWrapping="Wrap" Text="Season No:" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.486,-0.348"/>
+        <ComboBox IsEditable="True" IsReadOnly="True" Text="RoundNo" HorizontalAlignment="Left" Margin="99,64,0,0" VerticalAlignment="Top" Width="77" Height="20">
+            <ComboBoxItem Content="Round 1"></ComboBoxItem>
+            <ComboBoxItem Content="Round 2"></ComboBoxItem>
+            <ComboBoxItem Content="Round 3"></ComboBoxItem>
+        </ComboBox>
+        <Button Content="Update Ladder" HorizontalAlignment="Left" Margin="0,235,0,0" VerticalAlignment="Top" Width="127" Background="#FF72FCF0" FontWeight="Bold" FontSize="15" RenderTransformOrigin="0.535,2.483"/>
+        <DataGrid ItemsSource="{Binding}" x:Name="DataLadderGames"  HorizontalAlignment="Left" Height="231" Margin="132,89,0,0" VerticalAlignment="Top" Width="479"/>
     </Grid>
 </Page>

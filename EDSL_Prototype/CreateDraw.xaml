@@ -15,6 +15,5 @@
         <ComboBox HorizontalAlignment="Left" Margin="177,138,0,0" VerticalAlignment="Top" Width="120"/>
         <Button Content="Create Draw" HorizontalAlignment="Left" Margin="344,130,0,0" VerticalAlignment="Top" Width="159" FontSize="24" FontWeight="Bold" Height="42" Background="#FF43FCDE"/>
         <TextBlock HorizontalAlignment="Left" Margin="58,215,0,0" TextWrapping="Wrap" Text="Division Details:" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Height="99" Margin="216,215,0,0" TextWrapping="Wrap" Text="DivisionDetails" VerticalAlignment="Top" Width="287"/>
     </Grid>
 </Page>

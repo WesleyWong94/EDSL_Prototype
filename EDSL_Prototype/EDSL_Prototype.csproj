@@ -58,6 +58,8 @@
     <Compile Include="CreateLadder.xaml.cs">
       <DependentUpon>CreateLadder.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Ladder.cs" />
+    <Compile Include="Models\Round.cs" />
     <Compile Include="ViewDraw.xaml.cs">
       <DependentUpon>ViewDraw.xaml</DependentUpon>
     </Compile>

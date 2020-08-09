@@ -21,6 +21,5 @@
         <Button Content="Delete" HorizontalAlignment="Left" Margin="488,291,0,0" VerticalAlignment="Top" Width="97" Height="25" FontWeight="Bold" Background="#FF4FFADF"/>
         <ComboBox HorizontalAlignment="Left" Margin="132,78,0,0" VerticalAlignment="Top" Width="120"/>
         <Image HorizontalAlignment="Left" Height="158" Margin="189,128,0,0" VerticalAlignment="Top" Width="374"/>
-        <Image Margin="189,128,83,72.6" Source="LadderExample.png" Stretch="Fill"/>
     </Grid>
 </Page>
